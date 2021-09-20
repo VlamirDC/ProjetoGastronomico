@@ -30,10 +30,19 @@
 		<c:set var="botao" value="Voltar"/>
 	</c:if>
 	
-
-
 	<h2>${titulo}</h2>
 		<form action="${rotaIncluir}" method="${metodo}">
+		
+		<div class="form-group">
+			<label>Usuário:</label>	
+			<select class="form-control" name="usuario.id">
+				<c:forEach var="u" items="${usuarioLista}">
+					<option value="${u.id}">${u.nome}</option>
+				</c:forEach>
+				
+	      	</select>
+	     </div>
+		
 		    <div class="form-group">
 		      <label>Tipo de Estabelecimento:</label>
 		      <input type="text" class="form-control" value = "${rotaRoteiro.nomeRoteiro}" placeholder="Entre com o tipo de estabelecimento" 

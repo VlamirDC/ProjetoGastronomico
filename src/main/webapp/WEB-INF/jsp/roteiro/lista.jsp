@@ -49,6 +49,7 @@
 		        <th>Nome</th>
 		        <th>Quantidade</th>
 		        <th>Cidade</th>
+		        <th>Usuário</th>
 		        <th>Exclusão</th>
 		        <th>Consulta</th>
 		      </tr>
@@ -58,8 +59,9 @@
 			      <tr>
 			      	<td>${roteiro.id}</td>
 			        <td>${roteiro.nomeRoteiro}</td>
-			        <td>${roteiro.qtdTipoRoteiro}
-			        <td>${roteiro.regiaoLocal}
+			        <td>${roteiro.qtdTipoRoteiro}</td>
+			        <td>${roteiro.regiaoLocal}</td>
+			        <td>${roteiro.usuario.nome}</td>
 			        <td><a href="/roteiro/${roteiro.id}/excluir">Excluir</a></td>
 			        <td><a href="/roteiro/${roteiro.id}/consultar">Consultar</a></td>
 			      </tr>

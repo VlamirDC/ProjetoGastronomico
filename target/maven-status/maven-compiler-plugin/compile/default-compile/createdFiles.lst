@@ -1,6 +1,10 @@
 code\com\desafio\appVlamir\model\service\RoteiroService.class
 code\com\desafio\appVlamir\AppVlamirApplication.class
+code\com\desafio\appVlamir\controller\UsuarioController.class
+code\com\desafio\appVlamir\model\repository\UsuarioRepository.class
 code\com\desafio\appVlamir\model\testes\RoteiroTeste.class
 code\com\desafio\appVlamir\controller\RoteiroController.class
+code\com\desafio\appVlamir\model\domain\Usuario.class
+code\com\desafio\appVlamir\model\service\UsuarioService.class
 code\com\desafio\appVlamir\model\domain\Roteiro.class
 code\com\desafio\appVlamir\model\repository\RoteiroRepository.class

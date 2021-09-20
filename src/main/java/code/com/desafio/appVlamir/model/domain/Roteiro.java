@@ -4,6 +4,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
+
+import code.com.desafio.appVlamir.model.domain.Usuario;
+
 
 @Entity
 public class Roteiro {
@@ -15,6 +21,8 @@ public class Roteiro {
 	private String regiaoLocal;
 	private boolean possuiEstacionamento;
 	private boolean fazEntrega;
+	@ManyToOne
+	private Usuario usuario;
 	
 	public Roteiro() {
 		this.regiaoLocal = "Niterói";
@@ -74,6 +82,15 @@ public class Roteiro {
 	public void setFazEntrega(boolean fazEntrega) {
 		this.fazEntrega = fazEntrega;
 	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
 	
 	
 

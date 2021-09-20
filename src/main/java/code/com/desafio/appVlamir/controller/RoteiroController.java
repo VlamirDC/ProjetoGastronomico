@@ -13,12 +13,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import code.com.desafio.appVlamir.model.domain.Roteiro;
 import code.com.desafio.appVlamir.model.service.RoteiroService;
+import code.com.desafio.appVlamir.model.service.UsuarioService;
 
 @Controller
 public class RoteiroController {
 	
 	@Autowired
 	private RoteiroService roteiroService;
+	
+	@Autowired
+	private UsuarioService usuarioService;
+	
 	String msg;
 	Optional<Roteiro> idRoteiro;
 	
@@ -28,7 +33,10 @@ public class RoteiroController {
 	}
 	
 	@GetMapping(value = "/roteiro")
-	public String telaCadastro() {
+	public String telaCadastro(Model model) {
+		
+		model.addAttribute("usuarioLista", usuarioService.obterLista());
+		
 		return "roteiro/cadastro";
 	}
 	
@@ -81,7 +89,7 @@ public class RoteiroController {
 		
 		model.addAttribute("rotaRoteiro", idRoteiro);
 		
-		return "roteiro/cadastro";
+		return telaCadastro(model);
 	}
 	
 	@GetMapping(value = "/roteiros")

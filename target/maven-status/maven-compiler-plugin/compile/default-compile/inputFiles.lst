@@ -1,6 +1,10 @@
 C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\AppVlamirApplication.java
 C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\model\service\RoteiroService.java
 C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\model\testes\RoteiroTeste.java
+C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\model\repository\UsuarioRepository.java
 C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\model\repository\RoteiroRepository.java
 C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\controller\RoteiroController.java
+C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\model\domain\Usuario.java
+C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\model\service\UsuarioService.java
+C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\controller\UsuarioController.java
 C:\Dev\ProjetoGastronomico\appVlamir\src\main\java\code\com\desafio\appVlamir\model\domain\Roteiro.java
